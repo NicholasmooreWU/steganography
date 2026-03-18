@@ -98,3 +98,69 @@ Install required dependencies:
 
 ```bash
 pip install pillow cryptography
+```
+
+### Usage
+
+#### Encoding a Message
+
+```bash
+python "CHACHA 20.py" encode --image input.png --output encoded.png --message "Secret Message" --password "YourPassword"
+```
+
+- `--image`: Path to the input image file
+- `--output`: Path to save the encoded image
+- `--message`: The text message to hide
+- `--password`: Password for encryption
+
+#### Decoding a Message
+
+```bash
+python "CHACHA 20.py" decode --image encoded.png --password "YourPassword"
+```
+
+- `--image`: Path to the encoded image file
+- `--password`: Password used for encryption
+
+### Example
+
+1. Encode a message:
+   - Input: `input.png`, Message: "Hello World", Password: "MyPassword1"
+   - Output: `encoded.png`
+
+2. Decode the message:
+   - Input: `encoded.png`, Password: "MyPassword1"
+   - Output: Revealed message in terminal
+
+---
+
+## Project Structure
+
+```
+steganography-main/
+├── Ceaser cipher.py
+├── CHACHA 20.py
+├── Vigenère cipher.py
+├── README.md
+├── setup.cfg
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Credits
+
+- Developed by [Your Name]
+- Uses Pillow and cryptography libraries
+- Inspired by steganography and cryptography research
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements.
