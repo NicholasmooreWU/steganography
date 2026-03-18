@@ -1,6 +1,6 @@
 # Secure Image Steganography with Encryption
 
-## ⚠️ Security Disclaimer (Important)
+## Security Disclaimer (Important)
 
 This project is intended **strictly for educational and research purposes**.
 
@@ -155,7 +155,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Credits
 
-- Developed by [Your Name]
+- Developed by Nicholas Moore
 - Uses Pillow and cryptography libraries
 - Inspired by steganography and cryptography research
 
